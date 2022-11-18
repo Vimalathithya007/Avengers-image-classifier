@@ -27,9 +27,10 @@ classes. This uses a special technique that you can look up on google
      - a) import libraries 
      - b)By using opencv and imghdr remove files other than jpg,png,bmb and jpeg format
      - c) Load data using image_dataset_from_directory method which will automatically identify the classes in the dataset 
+     ![Avngers with class 0 , 1 ,2 ,3 ,4 ](readme_img/im1.png)
      - d) Data preprocessing 
          - i) Scaling the data 
-               
+                    ![Before](readme_img/b_sc.png)                    ![After](readme_img/a_sc.png)
          - ii) Spliting the data
                - Train (65.625 % - Batches) ,          Test(12.5 % - 4 Batches) and 
                valdation(21.875 % - 7 Batches)data
@@ -104,7 +105,11 @@ classes. This uses a special technique that you can look up on google
     - Common neural network layer with the task to classify the Output from the previous layers into their respective classes.
 
 
-- Images
+ Images
+      ![Loss](readme_img/loss.png)      ![Accuracy](readme_img/accuracy.png)
+      
+      
+
 
 - Tools Used
     
@@ -114,6 +119,5 @@ classes. This uses a special technique that you can look up on google
     - Libraries : cv2 ,imghdr , matplotlib , numpy , tensorflow , keras
     
 - Conclusion
-
-- Acknowledgements 
+       - so this model predicts the Avengers with  F1 score around 0.98 .This model can be still improved by  training with more data , and with still good CNN architecture .
 
